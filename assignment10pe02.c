@@ -2,11 +2,12 @@
 /*******************************/
 /* Programmer: Nathan Woodward */
 /* Program: assignment10pe02.c */
-/* Approximate time: 90 mins   */
+/* Approximate time: 60 mins   */
 /*******************************/
 
 /*
-  This program ...
+  This program calculates the nth term
+  of the fibonacci sequence recursively
 */
 
 #include <stdio.h>
