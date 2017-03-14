@@ -1,14 +1,14 @@
 /*******************************/
 /* Programmer: Nathan Woodward */
 /* Program: assignment11.c     */
-/* Approximate time: 10 hours  */
+/* Approximate time: 3 hours  */
 /*******************************/
 
 /* 
-	This program manipulates a linked list
-	given options through a menu and can print
-	the linked list backwards recursively and
-	iteratively
+   This program manipulates a linked list
+   given options through a menu and can print
+   the linked list backwards recursively and
+   iteratively
 */
 
 #include <stdio.h>
@@ -33,7 +33,7 @@ int menu();
 int main(int argc, char *argv[])
 {
   int start, n;
-  NODE* list; /* Our entire linked list as a whole */
+  NODE* list;
   NODE* new_node;
   list = NULL;
   int success_flag;
@@ -96,7 +96,6 @@ int main(int argc, char *argv[])
   return 0;
 }
  
-/* definition of function insert_node */
 NODE* insert_node(NODE *ptr, NODE *new)
 {
   if (new == NULL)
@@ -106,14 +105,12 @@ NODE* insert_node(NODE *ptr, NODE *new)
   return ptr;
 }
  
-/* definition of function find_node */
 NODE* find_node(NODE *ptr, int n)
 {
  
   NODE* search;
   search = ptr;
- 
-  /* Search up to second to last node */
+
   while(search != NULL)
   {
     if(n == search->data)
@@ -124,7 +121,6 @@ NODE* find_node(NODE *ptr, int n)
   return NULL;
 }
  
-/* definition of function delete_node */
 NODE* delete_node(NODE *ptr, int n, int *success_flag_ptr)
 {
   NODE* previous, *current;
@@ -155,7 +151,6 @@ NODE* delete_node(NODE *ptr, int n, int *success_flag_ptr)
   return ptr;
 }
  
-/* definition of function print_backward_iteration */
 void print_backward_iteration(NODE *ptr)
 {
   NODE *last, *current;
@@ -178,7 +173,6 @@ void print_backward_iteration(NODE *ptr)
     printf("\n");
 }
  
-/* definition of function print_backward_recursion */
 void print_backward_recursion(NODE *ptr)
 {
   if(ptr == NULL){
