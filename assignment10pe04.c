@@ -1,11 +1,12 @@
 /*******************************/
 /* Programmer: Nathan Woodward */
 /* Program: assignment10pe04.c */
-/* Approximate time: 120 mins  */
+/* Approximate time: 60 mins   */
 /*******************************/
 
 /*
-  This program ...
+  This program calculates the multiplicative
+  persistence of a number recursively
 */
 
 #include <stdio.h>
